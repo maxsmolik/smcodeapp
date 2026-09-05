@@ -162,6 +162,53 @@ main.container {
   margin-bottom: 1.25rem !important;
 }
 
+.app-lead {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.app-description {
+  margin-top: var(--block-gap);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.app-description > h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.app-description > h2:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.app-feature {
+  margin-bottom: 1.5rem;
+}
+
+.app-feature:last-of-type {
+  margin-bottom: 0;
+}
+
+.app-feature h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.app-feature p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.app-privacy-list {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+
 .carousel {
   margin-top: 2rem;
 }

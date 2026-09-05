@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Urlaubstage-Planer и Wochenbericht — Android-приложения от Smolik Maksim">
-  <title>Мои приложения</title>
+  <meta name="description" content="" data-i18n-content="index.meta">
+  <title data-i18n-title="index.title"></title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1>Мои приложения</h1>
-      <p class="subtitle">Полезные Android-приложения для работы и отдыха</p>
+      <h1 data-i18n="index.title"></h1>
+      <p class="subtitle" data-i18n="index.subtitle"></p>
     </div>
   </header>
 
@@ -21,10 +21,10 @@
         <img class="app-icon" src="urlaubsplaner/icon.png" alt="Urlaubstage-Planer">
         <div class="app-info">
           <h2>Urlaubstage-Planer</h2>
-          <p class="app-meta">Vacation Planner · Планировщик отпуска</p>
-          <p>Годовой планировщик отпускных дней с офлайн-праздниками Германии.</p>
+          <p class="app-meta" data-i18n="index.urlaubsplaner.meta"></p>
+          <p data-i18n="index.urlaubsplaner.desc"></p>
           <div class="app-actions">
-            <a class="btn" href="urlaubsplaner/">Подробнее</a>
+            <a class="btn" href="urlaubsplaner/" data-i18n="btn.more"></a>
           </div>
         </div>
       </article>
@@ -33,10 +33,10 @@
         <img class="app-icon" src="wochenbericht/icon.png" alt="Wochenbericht">
         <div class="app-info">
           <h2>Wochenbericht</h2>
-          <p class="app-meta">Arbeitszeiterfassung · Учёт рабочего времени</p>
-          <p>Учёт рабочего времени для монтажников и электриков с PDF-экспортом.</p>
+          <p class="app-meta" data-i18n="index.wochenbericht.meta"></p>
+          <p data-i18n="index.wochenbericht.desc"></p>
           <div class="app-actions">
-            <a class="btn" href="wochenbericht/">Подробнее</a>
+            <a class="btn" href="wochenbericht/" data-i18n="btn.more"></a>
           </div>
         </div>
       </article>
@@ -45,11 +45,15 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Smolik Maksim</p>
-      <nav>
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </nav>
+      <div class="footer-top">
+        <p>&copy; 2026 Smolik Maksim</p>
+        <nav>
+          <a href="privacy-policy.html" data-i18n="nav.privacy"></a>
+        </nav>
+      </div>
     </div>
   </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>

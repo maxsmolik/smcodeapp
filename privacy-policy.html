@@ -3,111 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy for mobile applications by Max">
-  <title>Privacy Policy</title>
+  <meta name="description" content="" data-i18n-content="privacy.meta">
+  <title data-i18n-title="privacy.title"></title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header header-small">
     <div class="container">
-      <a class="back-link" href="index.html">&larr; Back to apps</a>
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">Last updated: August 19, 2026</p>
+      <a class="back-link" href="index.html" data-i18n="nav.apps"></a>
+      <h1 data-i18n="privacy.title"></h1>
+      <p class="subtitle" data-i18n="privacy.updated"></p>
     </div>
   </header>
 
   <main class="container policy">
     <section>
-      <h2>Introduction</h2>
-      <p>
-        This Privacy Policy describes how the mobile applications developed by Max
-        (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) handle information when you use our apps
-        available on Google Play.
-      </p>
-      <p>
-        We respect your privacy. Our applications are designed to work on your device
-        without collecting, storing on our servers, or transmitting any personal or usage data.
-      </p>
+      <h2 data-i18n="privacy.intro.title"></h2>
+      <p data-i18n="privacy.intro.p1"></p>
+      <p data-i18n="privacy.intro.p2"></p>
     </section>
 
     <section>
-      <h2>Information We Do Not Collect</h2>
-      <p>Our applications do <strong>not</strong> collect any of the following:</p>
+      <h2 data-i18n="privacy.nocollect.title"></h2>
+      <p data-i18n-html="privacy.nocollect.p"></p>
       <ul>
-        <li>Personal information (name, email address, phone number, etc.)</li>
-        <li>Device identifiers or advertising IDs</li>
-        <li>Location data</li>
-        <li>Usage analytics or crash reports</li>
-        <li>Contacts, photos, or other content from your device</li>
-        <li>Payment or financial information</li>
+        <li data-i18n="privacy.nocollect.l1"></li>
+        <li data-i18n="privacy.nocollect.l2"></li>
+        <li data-i18n="privacy.nocollect.l3"></li>
+        <li data-i18n="privacy.nocollect.l4"></li>
+        <li data-i18n="privacy.nocollect.l5"></li>
+        <li data-i18n="privacy.nocollect.l6"></li>
       </ul>
     </section>
 
     <section>
-      <h2>Local Data on Your Device</h2>
-      <p>
-        Our apps may store data locally on your device so they can function offline
-        (for example, settings, entries, or records you create in the app).
-      </p>
-      <p>
-        This data never leaves your device unless you explicitly choose to export or share it
-        (for example, exporting a file or using the system share dialog).
-        We do not have access to this information and it is never sent to our servers
-        or any external services automatically.
-      </p>
+      <h2 data-i18n="privacy.local.title"></h2>
+      <p data-i18n="privacy.local.p1"></p>
+      <p data-i18n="privacy.local.p2"></p>
     </section>
 
     <section>
-      <h2>Data Sharing</h2>
-      <p>
-        We do not share any data with third parties because we do not collect any data.
-        Our apps do not use third-party analytics, advertising SDKs, or tracking services.
-      </p>
+      <h2 data-i18n="privacy.share.title"></h2>
+      <p data-i18n="privacy.share.p"></p>
     </section>
 
     <section>
-      <h2>Children's Privacy</h2>
-      <p>
-        Our applications do not knowingly collect information from anyone, including children
-        under the age of 13. Since no data is collected or transmitted, our apps are safe
-        for users of all ages.
-      </p>
+      <h2 data-i18n="privacy.children.title"></h2>
+      <p data-i18n="privacy.children.p"></p>
     </section>
 
     <section>
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. Any changes will be posted on this page
-        with an updated revision date. We encourage you to review this page periodically.
-      </p>
+      <h2 data-i18n="privacy.changes.title"></h2>
+      <p data-i18n="privacy.changes.p"></p>
     </section>
 
     <section>
-      <h2>Contact Us</h2>
+      <h2 data-i18n="privacy.contact.title"></h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us at:
-        <a href="mailto:smcodeapp@gmail.com">smcodeapp@gmail.com</a>
-      </p>
-    </section>
-
-    <hr class="divider">
-
-    <section lang="ru">
-      <h2>Политика конфиденциальности (RU)</h2>
-      <p>
-        Эта политика распространяется на все наши мобильные приложения.
-      </p>
-      <p>
-        Мы не собираем, не храним на серверах и не передаём никакие персональные
-        или технические данные. Данные, которые вы создаёте в приложении,
-        сохраняются только на вашем устройстве.
-      </p>
-      <p>
-        Данные покидают устройство только если вы сами экспортируете или делитесь ими.
-        Мы не используем аналитику, рекламные SDK или сторонние сервисы отслеживания.
-      </p>
-      <p>
-        По вопросам обращайтесь:
+        <span data-i18n="privacy.contact.p"></span>
         <a href="mailto:smcodeapp@gmail.com">smcodeapp@gmail.com</a>
       </p>
     </section>
@@ -115,11 +68,15 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Smolik Maksim</p>
-      <nav>
-        <a href="index.html">Home</a>
-      </nav>
+      <div class="footer-top">
+        <p>&copy; 2026 Smolik Maksim</p>
+        <nav>
+          <a href="index.html" data-i18n="nav.home"></a>
+        </nav>
+      </div>
     </div>
   </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>

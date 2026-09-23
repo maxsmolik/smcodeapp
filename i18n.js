@@ -1,6 +1,13 @@
 (function () {
-  var STORAGE_KEY = 'site-lang';
-  var SUPPORTED = ['de', 'en', 'ru'];
+  var STORAGE_PREFIX = 'site-lang:';
+  var LEGACY_STORAGE_KEY = 'site-lang';
+
+  var SCOPES = {
+    root: { langs: ['de', 'en', 'ru'] },
+    urlaubsplaner: { langs: ['de', 'en', 'ru'] },
+    wochenbericht: { langs: ['de', 'en', 'ru'] },
+    launcher_meetings: { langs: ['de', 'en', 'ru'] }
+  };
 
   var T = {
     de: {
@@ -62,13 +69,26 @@
 
       'index.launcher_meetings.name': 'Launcher Meetings',
       'index.launcher_meetings.meta': 'Zoom-Shortcuts · Schnellstart',
-      'index.launcher_meetings.desc': 'Beschreibung folgt in Kürze.',
+      'index.launcher_meetings.desc': 'Zoom-Konferenzen per Startbildschirm-Shortcut — Link, ID oder Einladungstext, alles lokal auf dem Gerät.',
 
       'launcher_meetings.title': 'Launcher Meetings',
       'launcher_meetings.heading': 'Launcher Meetings',
-      'launcher_meetings.meta': 'Launcher Meetings — Android-App für Zoom-Konferenzen',
-      'launcher_meetings.subtitle': 'de.smcode.lm',
-      'launcher_meetings.desc': 'Beschreibung folgt in Kürze. Die App speichert Ihre Meeting-Verknüpfungen lokal und startet Zoom auf dem Gerät.',
+      'launcher_meetings.meta': 'Launcher Meetings — schneller Zoom-Beitritt per Startbildschirm-Shortcut',
+      'launcher_meetings.subtitle': 'Zoom-Shortcuts · Schnellstart',
+      'launcher_meetings.intro': 'Launcher Meetings ist eine schlanke Hilfs-App für den schnellen Beitritt zu Zoom-Konferenzen direkt vom Startbildschirm Ihres Smartphones.',
+      'launcher_meetings.pitch': 'Schluss mit der Suche nach Links in Chats und Kalendern: Legen Sie einmal einen Shortcut für eine regelmäßige Besprechung an und treten Sie mit einem Tipp bei!',
+      'launcher_meetings.features.title': 'Hauptfunktionen',
+      'launcher_meetings.f.add': 'Schnelles Hinzufügen: Zoom-Link, Meeting-ID oder kompletten Einladungstext einfügen — die App erkennt die Daten automatisch.',
+      'launcher_meetings.f.password': 'Passwörter aus Links: Enthält die Einladung ein Meeting-Passwort, wird es gespeichert und beim Öffnen übergeben. Es gibt kein separates Passwortfeld; fehlt etwas, fragt Zoom nach.',
+      'launcher_meetings.f.name': 'Anzeigename: Pro Konferenz einen Teilnehmernamen setzen oder leer lassen für den Standard aus dem Zoom-Profil.',
+      'launcher_meetings.f.emoji': 'Personalisierte Shortcuts: Standard-Icon (blaues LM) oder ein beliebiges Emoji auf dem Startbildschirm.',
+      'launcher_meetings.f.list': 'Gespeicherte Meetings: Schnellzugriff, Start und Bearbeitung wiederkehrender Calls in einer Liste.',
+      'launcher_meetings.f.zoom': 'Zoom-Prüfung: Ist Zoom noch nicht installiert, öffnet die App die Installationsseite.',
+      'launcher_meetings.f.lang': 'Oberfläche auf Deutsch, Englisch und Russisch; bis zur manuellen Wahl in den Einstellungen gilt die Systemsprache des Geräts.',
+      'launcher_meetings.privacy.title': 'Privatsphäre & Sicherheit',
+      'launcher_meetings.privacy.text': 'Alle Daten bleiben ausschließlich lokal auf Ihrem Gerät. Die App erhebt keine personenbezogenen Daten, nutzt keine Analyse-Tools und sendet Links nicht an externe Server. Google-Backup ist deaktiviert.',
+      'launcher_meetings.disclaimer.title': 'Hinweis',
+      'launcher_meetings.disclaimer.text': 'Launcher Meetings ist eine unabhängige App und steht in keiner Verbindung zu Zoom Video Communications, Inc. — weder als Partner noch als Sponsor oder mit deren Billigung.',
 
       'privacy.title': 'Datenschutz',
       'privacy.meta': 'Datenschutzerklärung für mobile Apps von smcode',
@@ -183,13 +203,26 @@
 
       'index.launcher_meetings.name': 'Launcher Meetings',
       'index.launcher_meetings.meta': 'Zoom shortcuts · Quick join',
-      'index.launcher_meetings.desc': 'Description coming soon.',
+      'index.launcher_meetings.desc': 'Join Zoom from home-screen shortcuts — paste a link, meeting ID, or full invite text; everything stays on your device.',
 
       'launcher_meetings.title': 'Launcher Meetings',
       'launcher_meetings.heading': 'Launcher Meetings',
-      'launcher_meetings.meta': 'Launcher Meetings — Android app for Zoom conferences',
-      'launcher_meetings.subtitle': 'de.smcode.lm',
-      'launcher_meetings.desc': 'Description coming soon. The app stores your meeting shortcuts locally and opens Zoom on your device.',
+      'launcher_meetings.meta': 'Launcher Meetings — quick Zoom join from home-screen shortcuts',
+      'launcher_meetings.subtitle': 'Zoom shortcuts · Quick join',
+      'launcher_meetings.intro': 'Launcher Meetings is a lightweight utility for joining Zoom conferences quickly, straight from your phone’s home screen.',
+      'launcher_meetings.pitch': 'Stop hunting for links in chats and calendars: create a shortcut for a recurring meeting once and connect with a single tap.',
+      'launcher_meetings.features.title': 'Key features',
+      'launcher_meetings.f.add': 'Quick add: paste a meeting link, meeting ID, or the full invitation text — the app parses the details automatically.',
+      'launcher_meetings.f.password': 'Passwords from links: if the invite URL includes a meeting password, it is saved and passed when opening Zoom. There is no separate password field; Zoom will prompt if needed.',
+      'launcher_meetings.f.name': 'Display name: set a participant name for a specific meeting, or leave it blank to use your default Zoom profile name.',
+      'launcher_meetings.f.emoji': 'Personalized shortcuts: use the default blue LM icon or pick any emoji for the home-screen shortcut.',
+      'launcher_meetings.f.list': 'Saved meetings: quick access, launch, and edit recurring calls from one list.',
+      'launcher_meetings.f.zoom': 'Zoom check: if Zoom is not installed yet, the app opens the install page for you.',
+      'launcher_meetings.f.lang': 'Interface in English, German, and Russian; until you pick a language in settings, your device language is used.',
+      'launcher_meetings.privacy.title': 'Privacy & security',
+      'launcher_meetings.privacy.text': 'All data is stored locally on your device only. The app does not collect personal data, does not use analytics, and does not send links to third-party servers. Google backup is disabled.',
+      'launcher_meetings.disclaimer.title': 'Disclaimer',
+      'launcher_meetings.disclaimer.text': 'Launcher Meetings is an independent app and is not affiliated with, sponsored by, or endorsed by Zoom Video Communications, Inc.',
 
       'privacy.title': 'Privacy Policy',
       'privacy.meta': 'Privacy Policy for mobile applications by smcode',
@@ -304,13 +337,26 @@
 
       'index.launcher_meetings.name': 'Launcher Meetings',
       'index.launcher_meetings.meta': 'Ярлыки Zoom · Быстрый вход',
-      'index.launcher_meetings.desc': 'Описание скоро будет добавлено.',
+      'index.launcher_meetings.desc': 'Быстрый вход в Zoom с рабочего стола — ярлыки, автопарсинг ссылок и приглашений, данные только на устройстве.',
 
       'launcher_meetings.title': 'Launcher Meetings',
       'launcher_meetings.heading': 'Launcher Meetings',
-      'launcher_meetings.meta': 'Launcher Meetings — Android-приложение для Zoom-конференций',
-      'launcher_meetings.subtitle': 'de.smcode.lm',
-      'launcher_meetings.desc': 'Описание скоро будет добавлено. Приложение хранит ярлыки встреч локально и открывает Zoom на устройстве.',
+      'launcher_meetings.meta': 'Launcher Meetings — быстрый вход в Zoom с ярлыка на рабочем столе',
+      'launcher_meetings.subtitle': 'Ярлыки Zoom · Быстрый вход',
+      'launcher_meetings.intro': 'Launcher Meetings — удобная и легковесная утилита для быстрого входа в конференции Zoom прямо с рабочего стола вашего смартфона.',
+      'launcher_meetings.pitch': 'Больше не нужно искать ссылки в чатах и календарях: создайте ярлык для регулярной встречи один раз и подключайтесь в одно касание!',
+      'launcher_meetings.features.title': 'Ключевые возможности',
+      'launcher_meetings.f.add': 'Быстрое добавление: вставьте ссылку на конференцию, её идентификатор (Meeting ID) или скопируйте текст приглашения целиком — приложение распознает данные автоматически.',
+      'launcher_meetings.f.password': 'Сохранение паролей из ссылок: если в ссылке-приглашении содержится пароль встречи, он сохраняется и используется при входе. Отдельного поля пароля нет — при необходимости его запросит Zoom.',
+      'launcher_meetings.f.name': 'Указание имени: вы можете задать отображаемое имя участника для конкретной конференции или оставить поле пустым, чтобы использовать имя профиля Zoom по умолчанию.',
+      'launcher_meetings.f.emoji': 'Персонализация ярлыков: используйте стандартную иконку приложения (синий знак LM) или выберите любой подходящий эмодзи для рабочего стола.',
+      'launcher_meetings.f.list': 'Список сохранённых встреч: быстрый доступ, запуск и редактирование регулярных звонков прямо из списка.',
+      'launcher_meetings.f.zoom': 'Проверка наличия Zoom: если приложение Zoom ещё не установлено, Launcher Meetings аккуратно предложит открыть страницу установки.',
+      'launcher_meetings.f.lang': 'Интерфейс на русском, немецком и английском; пока вы не выбрали язык в настройках, используется язык системы телефона.',
+      'launcher_meetings.privacy.title': 'Приватность и безопасность',
+      'launcher_meetings.privacy.text': 'Все данные хранятся исключительно локально на вашем устройстве. Приложение не собирает персональные данные, не использует аналитику и не передаёт ссылки на сторонние серверы. Резервное копирование в Google отключено.',
+      'launcher_meetings.disclaimer.title': 'Дисклеймер',
+      'launcher_meetings.disclaimer.text': 'Launcher Meetings является независимым приложением и никак не связано, не спонсируется и не одобрено компанией Zoom Video Communications, Inc.',
 
       'privacy.title': 'Privacy Policy',
       'privacy.meta': 'Политика конфиденциальности мобильных приложений smcode',
@@ -367,25 +413,84 @@
     }
   };
 
-  function detectLocale() {
-    var saved = localStorage.getItem(STORAGE_KEY);
-    if (saved && SUPPORTED.indexOf(saved) !== -1) {
-      return saved;
+  function detectScope() {
+    var path = window.location.pathname.replace(/\\/g, '/');
+    var parts = path.split('/').filter(Boolean);
+    if (parts.length && /\.html$/i.test(parts[parts.length - 1])) {
+      parts.pop();
     }
+    var section = parts.length ? parts[parts.length - 1] : 'root';
+    if (SCOPES[section]) {
+      return section;
+    }
+    return 'root';
+  }
 
+  function scopeLangs(scope) {
+    return (SCOPES[scope] && SCOPES[scope].langs) || SCOPES.root.langs;
+  }
+
+  function isSupported(scope, lang) {
+    return scopeLangs(scope).indexOf(lang) !== -1;
+  }
+
+  function langFromBrowser(scope) {
     var langs = navigator.languages && navigator.languages.length
       ? navigator.languages
       : [navigator.language || 'en'];
 
     for (var i = 0; i < langs.length; i++) {
       var code = langs[i].toLowerCase().split('-')[0];
-      if (SUPPORTED.indexOf(code) !== -1) {
+      if (isSupported(scope, code)) {
         return code;
       }
     }
 
-    return 'en';
+    return scopeLangs(scope).indexOf('en') !== -1 ? 'en' : scopeLangs(scope)[0];
   }
+
+  function readStoredLang(scope) {
+    var saved = localStorage.getItem(STORAGE_PREFIX + scope);
+    if (saved && isSupported(scope, saved)) {
+      return saved;
+    }
+
+    if (scope === 'root') {
+      var legacy = localStorage.getItem(LEGACY_STORAGE_KEY);
+      if (legacy && isSupported(scope, legacy)) {
+        return legacy;
+      }
+    }
+
+    if (scope !== 'root') {
+      var rootLang = localStorage.getItem(STORAGE_PREFIX + 'root');
+      if (!rootLang && localStorage.getItem(LEGACY_STORAGE_KEY)) {
+        rootLang = localStorage.getItem(LEGACY_STORAGE_KEY);
+      }
+      if (rootLang && isSupported(scope, rootLang)) {
+        return rootLang;
+      }
+    }
+
+    return null;
+  }
+
+  function detectLocale(scope) {
+    var params = new URLSearchParams(window.location.search);
+    var fromQuery = params.get('lang');
+    if (fromQuery && isSupported(scope, fromQuery)) {
+      return fromQuery;
+    }
+
+    var stored = readStoredLang(scope);
+    if (stored) {
+      return stored;
+    }
+
+    return langFromBrowser(scope);
+  }
+
+  var scope = detectScope();
 
   function t(lang, key, vars) {
     var table = T[lang] || T.en;
@@ -444,8 +549,12 @@
   }
 
   function setLang(lang) {
-    if (SUPPORTED.indexOf(lang) === -1) return;
-    localStorage.setItem(STORAGE_KEY, lang);
+    if (!isSupported(scope, lang)) return;
+    localStorage.setItem(STORAGE_PREFIX + scope, lang);
+    if (scope === 'root') {
+      localStorage.removeItem(LEGACY_STORAGE_KEY);
+    }
+    currentLang = lang;
     applyLang(lang);
   }
 
@@ -456,9 +565,9 @@
     var privacyNav = footerTop.querySelector('nav');
     var nav = document.createElement('nav');
     nav.className = 'lang-switcher';
-    nav.setAttribute('aria-label', t(lang, 'lang.label'));
+    nav.setAttribute('aria-label', t(currentLang, 'lang.label'));
 
-    SUPPORTED.forEach(function (code) {
+    scopeLangs(scope).forEach(function (code) {
       var btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'lang-btn';
@@ -477,9 +586,13 @@
     }
   }
 
-  var lang = detectLocale();
+  var currentLang = detectLocale(scope);
   initSwitcher();
-  applyLang(lang);
+  applyLang(currentLang);
 
-  window.SiteI18n = { setLang: setLang, t: function (key, vars) { return t(lang, key, vars); } };
+  window.SiteI18n = {
+    scope: scope,
+    setLang: setLang,
+    t: function (key, vars) { return t(currentLang, key, vars); }
+  };
 })();

@@ -72,7 +72,7 @@
 
       'privacy.title': 'Datenschutz',
       'privacy.meta': 'Datenschutzerklärung für mobile Apps von smcode',
-      'privacy.updated': 'Zuletzt aktualisiert: 19. August 2026',
+      'privacy.updated': 'Zuletzt aktualisiert: 23. September 2026',
       'privacy.intro.title': 'Einleitung',
       'privacy.intro.p1': 'Diese Datenschutzerklärung beschreibt, wie die mobilen Anwendungen von smcode („wir“, „uns“) mit Informationen umgehen, wenn Sie unsere Apps im Google Play Store nutzen.',
       'privacy.intro.p2': 'Wir respektieren Ihre Privatsphäre. Unsere Apps sind so konzipiert, dass sie auf Ihrem Gerät arbeiten, ohne personenbezogene oder Nutzungsdaten zu sammeln, auf unseren Servern zu speichern oder zu übertragen.',
@@ -193,7 +193,7 @@
 
       'privacy.title': 'Privacy Policy',
       'privacy.meta': 'Privacy Policy for mobile applications by smcode',
-      'privacy.updated': 'Last updated: August 19, 2026',
+      'privacy.updated': 'Last updated: September 23, 2026',
       'privacy.intro.title': 'Introduction',
       'privacy.intro.p1': 'This Privacy Policy describes how the mobile applications developed by smcode ("we", "our", or "us") handle information when you use our apps available on Google Play.',
       'privacy.intro.p2': 'We respect your privacy. Our applications are designed to work on your device without collecting, storing on our servers, or transmitting any personal or usage data.',
@@ -314,7 +314,7 @@
 
       'privacy.title': 'Privacy Policy',
       'privacy.meta': 'Политика конфиденциальности мобильных приложений smcode',
-      'privacy.updated': 'Последнее обновление: 19 августа 2026',
+      'privacy.updated': 'Последнее обновление: 23 сентября 2026',
       'privacy.intro.title': 'Введение',
       'privacy.intro.p1': 'Эта политика конфиденциальности описывает, как мобильные приложения smcode («мы») обрабатывают информацию при использовании наших приложений в Google Play.',
       'privacy.intro.p2': 'Мы уважаем вашу конфиденциальность. Наши приложения работают на вашем устройстве и не собирают, не хранят на серверах и не передают персональные или технические данные.',

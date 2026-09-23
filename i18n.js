@@ -60,6 +60,16 @@
       'wochenbericht.subtitle': 'Arbeitszeiterfassung · Zeiterfassung',
       'wochenbericht.desc': 'Arbeitszeiterfassung für Monteure und Elektriker: Stunden pro Tag, mehrere Baustellen am Tag, Überstundenberechnung, Verlauf und PDF-Export. JSON-Backup nur auf Wunsch.',
 
+      'index.launcher_meetings.name': 'Launcher Meetings',
+      'index.launcher_meetings.meta': 'Zoom-Shortcuts · Schnellstart',
+      'index.launcher_meetings.desc': 'Beschreibung folgt in Kürze.',
+
+      'launcher_meetings.title': 'Launcher Meetings',
+      'launcher_meetings.heading': 'Launcher Meetings',
+      'launcher_meetings.meta': 'Launcher Meetings — Android-App für Zoom-Konferenzen',
+      'launcher_meetings.subtitle': 'de.smcode.lm',
+      'launcher_meetings.desc': 'Beschreibung folgt in Kürze. Die App speichert Ihre Meeting-Verknüpfungen lokal und startet Zoom auf dem Gerät.',
+
       'privacy.title': 'Datenschutz',
       'privacy.meta': 'Datenschutzerklärung für mobile Apps von smcode',
       'privacy.updated': 'Zuletzt aktualisiert: 19. August 2026',
@@ -84,7 +94,27 @@
       'privacy.changes.title': 'Änderungen',
       'privacy.changes.p': 'Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht.',
       'privacy.contact.title': 'Kontakt',
-      'privacy.contact.p': 'Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie uns unter:'
+      'privacy.contact.p': 'Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie uns unter:',
+
+      'privacy.urlaubsplaner.meta': 'Datenschutz — Urlaubsplaner (de.smcode.vacationplaner)',
+      'privacy.urlaubsplaner.back': '← Urlaubsplaner',
+      'privacy.urlaubsplaner.intro.p1': 'Diese Datenschutzerklärung gilt für die Android-App Urlaubsplaner (Package: de.smcode.vacationplaner), entwickelt von smcode („wir“, „uns“).',
+      'privacy.urlaubsplaner.local.p1': 'Urlaubsplaner speichert markierte Tage, Kategorien, Einstellungen und zwischengespeicherte Feiertagsdaten nur lokal auf Ihrem Gerät (Hive). Es gibt kein Benutzerkonto und keinen App-Server von smcode.',
+      'privacy.urlaubsplaner.local.p2': 'Backup, Kalender-Export (JSON, Bild, PDF, ICS) und Teilen erfolgen nur, wenn Sie dies in der App auslösen — über die System-Dateiauswahl oder den Teilen-Dialog.',
+      'privacy.urlaubsplaner.network.title': 'Internetverbindung',
+      'privacy.urlaubsplaner.network.p': 'Die App nutzt das Internet ausschließlich, um Feiertags- und Schulferiendaten von der OpenHolidays API zu laden. Dabei werden keine personenbezogenen Daten gesendet; Anfragen enthalten nur Land, Region und Zeitraum. Optional kann Android-Cloud-Backup in den Einstellungen aktiviert werden — die App lädt selbst nichts hoch.',
+
+      'privacy.wochenbericht.meta': 'Datenschutz — Wochenbericht (de.smcode.wochenbericht)',
+      'privacy.wochenbericht.back': '← Wochenbericht',
+      'privacy.wochenbericht.intro.p1': 'Diese Datenschutzerklärung gilt für die Android-App Wochenbericht (Package: de.smcode.wochenbericht), entwickelt von smcode („wir“, „uns“).',
+      'privacy.wochenbericht.local.p1': 'Wochenbericht speichert Arbeitszeiteinträge, Baustellen, Einstellungen und gespeicherte Wochenberichte nur lokal auf Ihrem Gerät (SQLite). Es gibt kein Benutzerkonto und keinen App-Server von smcode.',
+      'privacy.wochenbericht.local.p2': 'PDF-Export, JSON-Datensicherung und Teilen erfolgen nur auf Ihre Anweisung. Die App benötigt dafür keine dauerhafte Internetverbindung und sendet keine Daten an smcode.',
+
+      'privacy.launcher_meetings.meta': 'Datenschutz — Launcher Meetings (de.smcode.lm)',
+      'privacy.launcher_meetings.back': '← Launcher Meetings',
+      'privacy.launcher_meetings.intro.p1': 'Diese Datenschutzerklärung gilt für die Android-App Launcher Meetings (Package: de.smcode.lm), entwickelt von smcode („wir“, „uns“).',
+      'privacy.launcher_meetings.local.p1': 'Launcher Meetings speichert Meeting-Verknüpfungen, Anzeigenamen und Spracheinstellungen nur lokal auf Ihrem Gerät (SharedPreferences). Es gibt kein Benutzerkonto und keinen App-Server von smcode.',
+      'privacy.launcher_meetings.local.p2': 'Zum Beitreten zu Meetings öffnet die App Zoom auf dem Gerät. smcode ist nicht mit Zoom Video Communications verbunden. Android-Backup ist in der App deaktiviert.'
     },
 
     en: {
@@ -144,6 +174,16 @@
       'wochenbericht.subtitle': 'Arbeitszeiterfassung · Time tracking',
       'wochenbericht.desc': 'Work time tracking for technicians and electricians: hours per day, multiple job sites per day, overtime calculation, history, and PDF export. JSON backup only when you choose.',
 
+      'index.launcher_meetings.name': 'Launcher Meetings',
+      'index.launcher_meetings.meta': 'Zoom shortcuts · Quick join',
+      'index.launcher_meetings.desc': 'Description coming soon.',
+
+      'launcher_meetings.title': 'Launcher Meetings',
+      'launcher_meetings.heading': 'Launcher Meetings',
+      'launcher_meetings.meta': 'Launcher Meetings — Android app for Zoom conferences',
+      'launcher_meetings.subtitle': 'de.smcode.lm',
+      'launcher_meetings.desc': 'Description coming soon. The app stores your meeting shortcuts locally and opens Zoom on your device.',
+
       'privacy.title': 'Privacy Policy',
       'privacy.meta': 'Privacy Policy for mobile applications by smcode',
       'privacy.updated': 'Last updated: August 19, 2026',
@@ -168,7 +208,27 @@
       'privacy.changes.title': 'Changes to This Policy',
       'privacy.changes.p': 'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this page periodically.',
       'privacy.contact.title': 'Contact Us',
-      'privacy.contact.p': 'If you have any questions about this Privacy Policy, please contact us at:'
+      'privacy.contact.p': 'If you have any questions about this Privacy Policy, please contact us at:',
+
+      'privacy.urlaubsplaner.meta': 'Privacy Policy — Urlaubsplaner (de.smcode.vacationplaner)',
+      'privacy.urlaubsplaner.back': '← Urlaubsplaner',
+      'privacy.urlaubsplaner.intro.p1': 'This Privacy Policy applies to the Android app Urlaubsplaner (package: de.smcode.vacationplaner), developed by smcode ("we", "us").',
+      'privacy.urlaubsplaner.local.p1': 'Urlaubsplaner stores marked days, categories, settings, and cached holiday data locally on your device only (Hive). There is no user account and no smcode app server.',
+      'privacy.urlaubsplaner.local.p2': 'Backup, calendar export (JSON, image, PDF, ICS), and sharing happen only when you trigger them in the app — via the system file picker or share dialog.',
+      'privacy.urlaubsplaner.network.title': 'Internet Access',
+      'privacy.urlaubsplaner.network.p': 'The app uses the internet only to load public and school holiday data from the OpenHolidays API. No personal data is sent; requests contain only country, region, and date range. Optional Android cloud backup can be enabled in settings — the app does not upload data itself.',
+
+      'privacy.wochenbericht.meta': 'Privacy Policy — Wochenbericht (de.smcode.wochenbericht)',
+      'privacy.wochenbericht.back': '← Wochenbericht',
+      'privacy.wochenbericht.intro.p1': 'This Privacy Policy applies to the Android app Wochenbericht (package: de.smcode.wochenbericht), developed by smcode ("we", "us").',
+      'privacy.wochenbericht.local.p1': 'Wochenbericht stores work time entries, job sites, settings, and saved weekly reports locally on your device only (SQLite). There is no user account and no smcode app server.',
+      'privacy.wochenbericht.local.p2': 'PDF export, JSON backup, and sharing happen only when you choose. The app does not require a persistent internet connection and does not send data to smcode.',
+
+      'privacy.launcher_meetings.meta': 'Privacy Policy — Launcher Meetings (de.smcode.lm)',
+      'privacy.launcher_meetings.back': '← Launcher Meetings',
+      'privacy.launcher_meetings.intro.p1': 'This Privacy Policy applies to the Android app Launcher Meetings (package: de.smcode.lm), developed by smcode ("we", "us").',
+      'privacy.launcher_meetings.local.p1': 'Launcher Meetings stores meeting shortcuts, display names, and language settings locally on your device only (SharedPreferences). There is no user account and no smcode app server.',
+      'privacy.launcher_meetings.local.p2': 'To join meetings, the app opens Zoom on your device. smcode is not affiliated with Zoom Video Communications. Android backup is disabled in the app.'
     },
 
     ru: {
@@ -228,6 +288,16 @@
       'wochenbericht.subtitle': 'Arbeitszeiterfassung · Учёт рабочего времени',
       'wochenbericht.desc': 'Учёт рабочего времени для монтажников и электриков: ввод часов по дням, несколько объектов в день, расчёт переработок, история и PDF-экспорт. Резервное копирование в JSON — только по вашему выбору.',
 
+      'index.launcher_meetings.name': 'Launcher Meetings',
+      'index.launcher_meetings.meta': 'Ярлыки Zoom · Быстрый вход',
+      'index.launcher_meetings.desc': 'Описание скоро будет добавлено.',
+
+      'launcher_meetings.title': 'Launcher Meetings',
+      'launcher_meetings.heading': 'Launcher Meetings',
+      'launcher_meetings.meta': 'Launcher Meetings — Android-приложение для Zoom-конференций',
+      'launcher_meetings.subtitle': 'de.smcode.lm',
+      'launcher_meetings.desc': 'Описание скоро будет добавлено. Приложение хранит ярлыки встреч локально и открывает Zoom на устройстве.',
+
       'privacy.title': 'Privacy Policy',
       'privacy.meta': 'Политика конфиденциальности мобильных приложений smcode',
       'privacy.updated': 'Последнее обновление: 19 августа 2026',
@@ -252,7 +322,27 @@
       'privacy.changes.title': 'Изменения политики',
       'privacy.changes.p': 'Мы можем обновлять эту политику время от времени. Изменения публикуются на этой странице с обновлённой датой.',
       'privacy.contact.title': 'Контакты',
-      'privacy.contact.p': 'По вопросам обращайтесь:'
+      'privacy.contact.p': 'По вопросам обращайтесь:',
+
+      'privacy.urlaubsplaner.meta': 'Privacy Policy — Urlaubsplaner (de.smcode.vacationplaner)',
+      'privacy.urlaubsplaner.back': '← Urlaubsplaner',
+      'privacy.urlaubsplaner.intro.p1': 'Эта политика конфиденциальности относится к приложению Urlaubsplaner для Android (package: de.smcode.vacationplaner), разработанному smcode («мы»).',
+      'privacy.urlaubsplaner.local.p1': 'Urlaubsplaner хранит отмеченные дни, категории, настройки и кэш праздников только локально на устройстве (Hive). Нет аккаунта и серверов smcode.',
+      'privacy.urlaubsplaner.local.p2': 'Резервное копирование, экспорт календаря (JSON, изображение, PDF, ICS) и «Поделиться» — только по вашему действию через системный выбор файла или диалог sharing.',
+      'privacy.urlaubsplaner.network.title': 'Доступ в интернет',
+      'privacy.urlaubsplaner.network.p': 'Интернет используется только для загрузки государственных и школьных праздников через OpenHolidays API. Персональные данные не отправляются; в запросах только страна, регион и период. Опционально можно включить облачный бэкап Android — приложение само ничего не загружает.',
+
+      'privacy.wochenbericht.meta': 'Privacy Policy — Wochenbericht (de.smcode.wochenbericht)',
+      'privacy.wochenbericht.back': '← Wochenbericht',
+      'privacy.wochenbericht.intro.p1': 'Эта политика конфиденциальности относится к приложению Wochenbericht для Android (package: de.smcode.wochenbericht), разработанному smcode («мы»).',
+      'privacy.wochenbericht.local.p1': 'Wochenbericht хранит записи рабочего времени, объекты, настройки и сохранённые отчёты только локально на устройстве (SQLite). Нет аккаунта и серверов smcode.',
+      'privacy.wochenbericht.local.p2': 'PDF-экспорт, JSON-бэкап и «Поделиться» — только по вашему выбору. Постоянное подключение к интернету не требуется; данные не отправляются smcode.',
+
+      'privacy.launcher_meetings.meta': 'Privacy Policy — Launcher Meetings (de.smcode.lm)',
+      'privacy.launcher_meetings.back': '← Launcher Meetings',
+      'privacy.launcher_meetings.intro.p1': 'Эта политика конфиденциальности относится к приложению Launcher Meetings для Android (package: de.smcode.lm), разработанному smcode («мы»).',
+      'privacy.launcher_meetings.local.p1': 'Launcher Meetings хранит ярлыки встреч, отображаемые имена и настройки языка только локально на устройстве (SharedPreferences). Нет аккаунта и серверов smcode.',
+      'privacy.launcher_meetings.local.p2': 'Для входа в конференцию приложение открывает Zoom на устройстве. smcode не связан с Zoom Video Communications. Резервное копирование Android в приложении отключено.'
     }
   };
 

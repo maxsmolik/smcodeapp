@@ -99,6 +99,7 @@ main.container {
   height: 64px;
   border-radius: 16px;
   object-fit: cover;
+  background: var(--surface);
 }
 
 .app-info h2 {
@@ -140,6 +141,7 @@ main.container {
   height: 96px;
   border-radius: 20px;
   object-fit: cover;
+  background: var(--surface);
 }
 
 .app-detail-body p {

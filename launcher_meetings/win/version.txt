@@ -1,9 +1,8 @@
 1.1
-LauncherMeetings-setup.exe
+https://github.com/maxsmolik/Launcher-Meetings/releases/latest/download/LauncherMeetings-setup.exe
 <changelog>
 <ru>
 • Первое изменение
-• Второе изменение
 </ru>
 <de>
 • Erste Änderung

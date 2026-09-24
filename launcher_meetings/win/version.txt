@@ -1,2 +1,14 @@
 1.1
 LauncherMeetings-setup.exe
+<changelog>
+<ru>
+• Первое изменение
+• Второе изменение
+</ru>
+<de>
+• Erste Änderung
+</de>
+<en>
+• First change
+</en>
+</changelog>

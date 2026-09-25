@@ -1,0 +1,13 @@
+1.1
+https://github.com/maxsmolik/Launcher-Meetings/releases/latest/download/LauncherMeetings-setup.exe
+<changelog>
+<ru>
+• Первое изменение
+</ru>
+<de>
+• Erste Änderung
+</de>
+<en>
+• First change
+</en>
+</changelog>

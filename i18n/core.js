@@ -1,6 +1,7 @@
 (function () {
   var STORAGE_PREFIX = 'site-lang:';
   var LEGACY_STORAGE_KEY = 'site-lang';
+  var LAST_LANG_KEY = 'site-lang:last';
 
   function mergeTranslations() {
     var langs = ['de', 'en', 'ru'];
@@ -76,6 +77,11 @@
       if (legacy && isSupported(scope, legacy)) {
         return legacy;
       }
+    }
+
+    var lastLang = localStorage.getItem(LAST_LANG_KEY);
+    if (lastLang && isSupported(scope, lastLang)) {
+      return lastLang;
     }
 
     if (scope !== 'root') {
@@ -167,6 +173,7 @@
   function setLang(lang) {
     if (!isSupported(scope, lang)) return;
     localStorage.setItem(STORAGE_PREFIX + scope, lang);
+    localStorage.setItem(LAST_LANG_KEY, lang);
     if (scope === 'root') {
       localStorage.removeItem(LEGACY_STORAGE_KEY);
     }
@@ -175,10 +182,9 @@
   }
 
   function initSwitcher() {
-    var footerTop = document.querySelector('.footer-top');
-    if (!footerTop || document.querySelector('.lang-switcher')) return;
+    var headerInner = document.querySelector('.header .container');
+    if (!headerInner || document.querySelector('.lang-switcher')) return;
 
-    var privacyNav = footerTop.querySelector('nav');
     var nav = document.createElement('nav');
     nav.className = 'lang-switcher';
     nav.setAttribute('aria-label', t(currentLang, 'lang.label'));
@@ -195,11 +201,10 @@
       nav.appendChild(btn);
     });
 
-    if (privacyNav) {
-      footerTop.insertBefore(nav, privacyNav);
-    } else {
-      footerTop.appendChild(nav);
-    }
+    var wrap = document.createElement('div');
+    wrap.className = 'header-lang';
+    wrap.appendChild(nav);
+    headerInner.insertBefore(wrap, headerInner.firstChild);
   }
 
   var currentLang = detectLocale(scope);

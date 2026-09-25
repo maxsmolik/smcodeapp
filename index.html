@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" data-i18n-content="index.meta">
+  <title data-i18n-title="index.title"></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 data-i18n="index.title"></h1>
+      <p class="subtitle" data-i18n="index.subtitle"></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="apps">
+      <article class="app-card">
+        <img class="app-icon" src="urlaubsplaner/icon.png" alt="Urlaubsplaner">
+        <div class="app-info">
+          <h2 data-i18n="index.urlaubsplaner.name"></h2>
+          <p class="app-meta" data-i18n="index.urlaubsplaner.meta"></p>
+          <p data-i18n="index.urlaubsplaner.desc"></p>
+          <div class="app-actions">
+            <a class="btn" href="urlaubsplaner/" data-i18n="btn.more"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <img class="app-icon" src="wochenbericht/icon.png" alt="Wochenbericht">
+        <div class="app-info">
+          <h2>Wochenbericht</h2>
+          <p class="app-meta" data-i18n="index.wochenbericht.meta"></p>
+          <p data-i18n="index.wochenbericht.desc"></p>
+          <div class="app-actions">
+            <a class="btn" href="wochenbericht/" data-i18n="btn.more"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <img class="app-icon" src="launcher_meetings/icon.svg" alt="Launcher Meetings">
+        <div class="app-info">
+          <h2 data-i18n="index.launcher_meetings.name"></h2>
+          <p class="app-meta" data-i18n="index.launcher_meetings.meta"></p>
+          <p data-i18n="index.launcher_meetings.desc"></p>
+          <div class="app-actions">
+            <a class="btn" href="launcher_meetings/" data-i18n="btn.more"></a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <p>&copy; 2026 Smolik Maksim</p>
+        <nav>
+          <a href="privacy-policy.html" data-i18n="nav.privacy"></a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js" data-parts="shared root launcher_meetings"></script>
+</body>
+</html>

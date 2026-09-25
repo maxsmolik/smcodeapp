@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="Launcher Meetings">
+  <rect width="108" height="108" rx="24" fill="#0B5CFF"/>
+  <path fill="#FFFFFF" d="M27,36 H35 V64 H47 V72 H27 Z"/>
+  <path fill="#FFFFFF" d="M53,72 V36 H61 L67,48 L73,36 H81 V72 H73 V53.9 L67,65.9 L61,53.9 V72 Z"/>
+</svg>

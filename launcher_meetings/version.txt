@@ -1,13 +1,25 @@
-1.1
+1.3
 https://github.com/maxsmolik/Launcher-Meetings/releases/latest/download/LauncherMeetings-setup.exe
 <changelog>
 <ru>
-• Первое изменение
+• Форму «Новый ярлык» теперь можно свернуть в карточку, чтобы не мешала. Нажмите на неё, когда захотите создать новый.
+• Любую сохранённую встречу теперь можно изменить: просто нажмите редактировать, и данные вернутся в форму.
+• Удобный скролл: весь экран теперь листается целиком вместе со списком встреч.
+• Появилась кнопка «Отменить» — она сбрасывает введённое и сворачивает форму.
+• Улучшена общая стабильность работы и доработан интерфейс.
 </ru>
 <de>
-• Erste Änderung
+• Das Formular „Neue Verknüpfung“ lässt sich jetzt zuklappen. Ein Tippen genügt, um es wieder zu öffnen.
+• Gespeicherte Meetings lassen sich nun bearbeiten: Die Daten landen direkt wieder im Formular.
+• Die gesamte Seite scrollt jetzt ganz bequem zusammen mit der Meeting-Liste nach unten.
+• Neuer „Abbrechen“-Button: Setzt die Eingaben zurück und klappt das Formular wieder ein.
+• Allgemeine Stabilitätsverbesserungen und Feinschliff an der Benutzeroberfläche.
 </de>
 <en>
-• First change
+• The "New Shortcut" form can now be collapsed into a compact card. Just tap it whenever you want to add a meeting.
+• You can now edit saved meetings: all details will jump right back into the form.
+• The entire screen now scrolls smoothly together with your meetings list.
+• Added a "Cancel" button to clear fields and collapse the form back.
+• Overall stability improvements and user interface polish.
 </en>
 </changelog>

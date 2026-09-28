@@ -1,19 +1,22 @@
-1.4.1
+1.5.1
 https://github.com/maxsmolik/Launcher-Meetings/releases/latest/download/LauncherMeetings-setup.exe
 <changelog>
 <ru>
-• Перед удалением конференция подтверждается. Она убирается из списка и с рабочего стола.
-• «Ваше имя в конференции» и «Имя ярлыка» — не больше 30 символов. Под полем виден счётчик.
-• В настройках добавлены лицензии открытых компонентов.
+• Ряд иконок прокручивается стрелками влево и вправо. Полосы прокрутки нет.
+• По умолчанию после значка LM: календарь, люди, сообщение, телефон.
+• Список эмодзи можно редактировать: добавить один эмодзи или удалить. Пока список не меняли, показываются эти четыре.
+• Установка обновления из программы идёт без кнопок «Далее». Программа при этом закрывается сама. Обычный запуск установщика открывает мастер.
 </ru>
 <de>
-• Das Löschen einer Konferenz muss bestätigt werden. Sie wird aus der Liste und vom Desktop entfernt.
-• „Ihr Name in der Konferenz“ und „Name der Verknüpfung“ sind auf 30 Zeichen begrenzt. Unter dem Feld steht ein Zähler.
-• In den Einstellungen gibt es die Lizenzen der Open-Source-Komponenten.
+• Die Icon-Reihe lässt sich mit Pfeilen nach links und rechts scrollen. Es gibt keine Scrollleiste.
+• Standardmäßig nach dem LM-Symbol: Kalender, Personen, Nachricht, Telefon.
+• Die Emoji-Liste lässt sich bearbeiten: ein Emoji hinzufügen oder entfernen. Solange die Liste nicht geändert wurde, werden diese vier angezeigt.
+• Die Aktualisierung aus dem Programm läuft ohne „Weiter“-Schaltflächen. Das Programm schließt sich dabei selbst. Ein normaler Start des Installers öffnet den Assistenten.
 </de>
 <en>
-• Deleting a meeting asks for confirmation. It is removed from the list and the desktop.
-• “Your name in the meeting” and “Shortcut name” are limited to 30 characters. A counter is shown under each field.
-• Settings now include the licenses of the open-source components.
+• The icon row scrolls with left and right arrows. There is no scrollbar.
+• By default, after the LM icon: calendar, people, message, phone.
+• The emoji list can be edited: add one emoji or remove one. Until the list is changed, these four are shown.
+• Installing an update from the app skips the “Next” buttons. The app closes itself. A normal installer launch opens the wizard.
 </en>
 </changelog>

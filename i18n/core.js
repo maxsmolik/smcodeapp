@@ -168,6 +168,8 @@
       btn.classList.toggle('active', active);
       btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
+
+    document.dispatchEvent(new CustomEvent('site-lang', { detail: lang }));
   }
 
   function setLang(lang) {

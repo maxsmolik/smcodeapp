@@ -45,4 +45,20 @@
       goTo(index + (diff < 0 ? 1 : -1));
     }
   }, { passive: true });
+
+  const shots = ['01', '02', '03', '04', '05', '06', '07', '08'];
+
+  function applyShots(lang) {
+    const folder = lang === 'de' || lang === 'ru' ? lang : 'en';
+    carousel.querySelectorAll('.carousel-slide img').forEach(function (img, i) {
+      if (!shots[i]) return;
+      img.src = 'assets/screenshot/' + folder + '/' + shots[i] + '.png';
+    });
+  }
+
+  document.addEventListener('site-lang', function (e) {
+    applyShots(e.detail);
+  });
+
+  applyShots(document.documentElement.lang);
 })();

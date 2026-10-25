@@ -170,6 +170,7 @@
     });
 
     document.dispatchEvent(new CustomEvent('site-lang', { detail: lang }));
+    document.documentElement.classList.add('i18n-ready');
   }
 
   function setLang(lang) {

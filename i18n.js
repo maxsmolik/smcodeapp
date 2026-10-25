@@ -13,7 +13,10 @@
     var s = document.createElement('script');
     s.src = base + parts[i] + '.js';
     s.onload = function () { i++; loadNext(); };
-    s.onerror = function () { console.error('i18n load failed:', s.src); };
+    s.onerror = function () {
+      console.error('i18n load failed:', s.src);
+      document.documentElement.classList.add('i18n-ready');
+    };
     document.head.appendChild(s);
   }
   loadNext();

@@ -6,6 +6,42 @@
   padding: 0;
 }
 
+html {
+  background: var(--bg);
+}
+
+html:not(.i18n-ready) body {
+  visibility: hidden;
+}
+
+html:not(.i18n-ready)::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: -1.125rem 0 0 -1.125rem;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: i18n-spin 0.7s linear infinite;
+}
+
+html.i18n-ready body {
+  animation: i18n-fade 0.28s ease;
+}
+
+@keyframes i18n-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes i18n-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 :root {
   --bg: #0f1117;
   --surface: #1a1d27;

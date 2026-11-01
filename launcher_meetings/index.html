@@ -55,7 +55,23 @@
 
     </article>
 
-
+    <details class="fold" id="shortcut-permission">
+      <summary data-i18n="launcher_meetings.permission.title"></summary>
+      <div class="fold-body">
+        <h3 data-i18n="launcher_meetings.permission.common.title"></h3>
+        <p data-i18n="launcher_meetings.permission.common.text"></p>
+        <h3 data-i18n="launcher_meetings.permission.xiaomi.title"></h3>
+        <p data-i18n="launcher_meetings.permission.xiaomi.text"></p>
+        <h3 data-i18n="launcher_meetings.permission.oppo.title"></h3>
+        <p data-i18n="launcher_meetings.permission.oppo.text"></p>
+        <h3 data-i18n="launcher_meetings.permission.vivo.title"></h3>
+        <p data-i18n="launcher_meetings.permission.vivo.text"></p>
+        <h3 data-i18n="launcher_meetings.permission.meizu.title"></h3>
+        <p data-i18n="launcher_meetings.permission.meizu.text"></p>
+        <h3 data-i18n="launcher_meetings.permission.tecno.title"></h3>
+        <p data-i18n="launcher_meetings.permission.tecno.text"></p>
+      </div>
+    </details>
 
     <section class="app-description">
 
@@ -120,6 +136,25 @@
 
 
   <script src="../i18n.js" data-parts="shared launcher_meetings"></script>
+  <script>
+    (function () {
+      var id = 'shortcut-permission';
+      function openSection(scroll) {
+        if (location.hash !== '#' + id) return;
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.open = true;
+        if (scroll) el.scrollIntoView({ block: 'start' });
+      }
+      openSection(false);
+      document.addEventListener('site-lang', function () {
+        openSection(true);
+      }, { once: true });
+      window.addEventListener('hashchange', function () {
+        openSection(true);
+      });
+    })();
+  </script>
 
 </body>
 
